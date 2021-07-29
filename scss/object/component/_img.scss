@@ -1,0 +1,13 @@
+.c-img_inner{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.c-img_profile {
+  // profile画像
+  border-radius: 300px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}

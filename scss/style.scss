@@ -1,0 +1,50 @@
+// foundation
+@import "foundation/bootstrap";
+@import "foundation/reset";
+@import "foundation/mixin";
+@import "foundation/var";
+@import "foundation/color";
+@import "foundation/base";
+
+// layout
+@import "layout/header";
+@import "layout/nav";
+@import "layout/main";
+@import "layout/aside";
+@import "layout/footer";
+
+// object
+// - component
+@import "object/component/button";
+@import "object/component/card";
+@import "object/component/form";
+@import "object/component/heading";
+@import "object/component/img";
+@import "object/component/list";
+@import "object/component/paragraph";
+@import "object/component/radio";
+@import "object/component/span";
+@import "object/component/table";
+
+// - project
+@import "object/project/index";
+@import "object/project/about";
+
+// - utility
+@import "object/utility/utility";
+
+.dummy {
+  box-shadow: 0 0 4px black;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  img {
+    object-fit: cover;
+    height: 300px;
+  }
+}
+.container-sm{
+  background-color: red;
+}

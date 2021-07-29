@@ -1,0 +1,31 @@
+// heading.scss
+h1,
+h2,
+h3,
+h4 {
+  font-family: $f-var_font_main;
+  font-weight: bold;
+}
+.c-heading_h1 {
+  left: 10px;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.c-heading_h2 {
+  letter-spacing: 0.1em;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.c-heading_h3 {
+  letter-spacing: 0.05em;
+}
+.c-heading_h4 {
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.c-heading_box {
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
+}

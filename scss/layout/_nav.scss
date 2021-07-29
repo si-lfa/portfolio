@@ -1,0 +1,101 @@
+// nav.scss
+.l-nav_pc {
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  ul {
+    display: flex;
+    li {
+      font-family: $f-var_font_main;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 48px;
+    }
+  }
+}
+#l-nav_sp_menu {
+  background-color: $f-c_white;
+  height: 100vh;
+  position: fixed;
+  left: 100%;
+  top: 65px;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  li {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 25px 0;
+    & a:hover {
+      color: $f-c_mainColor;
+    }
+  }
+}
+.l-nav_active {
+  color: $f-c_mainColor;
+}
+nav {
+  & a:hover {
+    color: $f-c_mainColor;
+    transition: 0.3s;
+  }
+}
+.l-nav_sp_icon {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  & span,
+  & span::before,
+  & span::after {
+    background-color: $f-c_black;
+    border-radius: 4px;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  & span {
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      top: 12px;
+    }
+  }
+}
+.l-nav_sp_icon_close {
+  font-size: 32px;
+  position: absolute;
+  bottom: 100px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+#l-nav_sp_checkbox {
+  display: none;
+}
+#l-nav_sp_checkbox:checked ~ .l-nav_sp_icon span {
+  background-color: rgba(255, 255, 255, 0);
+}
+#l-nav_sp_checkbox:checked ~ .l-nav_sp_icon span::before {
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+#l-nav_sp_checkbox:checked ~ .l-nav_sp_icon span::after {
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+#l-nav_sp_checkbox:checked ~ #l-nav_sp_menu {
+  left: 0%;
+  transition: 0.3s;
+}

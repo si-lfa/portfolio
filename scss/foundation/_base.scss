@@ -1,0 +1,32 @@
+// base.scss
+body {
+  color: $f-c_black;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  color: $f-c_black;
+}
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}

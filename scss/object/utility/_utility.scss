@@ -1,0 +1,34 @@
+// utility.scss
+.u-sp_twitter {
+  color: $f-c_mainColor;
+  font-size: 24px;
+  padding-top: 50px;
+  padding-right: 5px;
+}
+.u-fontAwesome_icon {
+  float: left;
+  font-size: 36px;
+  margin-right: 16px;
+}
+.u-fontAwesome_language {
+  font-size: 36px;
+}
+.u-textalign_center {
+  text-align: center
+}
+.u-textalign_right {
+  text-align: right;
+}
+.u-link_accent {
+  font-family: $f-var_font_main;
+  font-weight: bold;
+  &:hover {
+    color: $f-c_mainColor;
+  }
+}
+.u-height600{
+  height: 400px;
+}
+.twitter-timeline{
+  height: 400px;
+}

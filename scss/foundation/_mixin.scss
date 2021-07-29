@@ -1,0 +1,36 @@
+//mixin.scss
+@mixin xs($width: 576px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin sm($width: 577px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin md($width: 769px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin lg($width: 993px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin xl($width: 1201px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin xxl($width: 1401px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

@@ -1,0 +1,48 @@
+// form.scss
+.c-form {
+  dl {
+    border: 1px solid #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    dt {
+      padding: 5px 14px;
+    }
+    dd {
+      padding: 5px 14px;
+    }
+  }
+  input,
+  textarea {
+    background-color: $f-c_offWhite;
+    border: 1px solid $f-c_black;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.c-form_button_box {
+  text-align: center;
+}
+.c-form_button {
+  background-color: $f-c_offWhite;
+  text-align: center;
+  border: 1px solid $f-c_black;
+  box-shadow: 0 4px 2px $f-c_baseColor;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  transition: 0.3s;
+  &:hover {
+    background-color: $f-c_mainColor;
+    color: $f-c_white;
+    transform: translateY(4px);
+    box-shadow: none;
+  }
+}
+.c-form_error {
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}

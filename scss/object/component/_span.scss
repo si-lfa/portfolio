@@ -1,0 +1,25 @@
+// span.scss
+.c-span_italic {
+  font-style: italic;
+  margin: 0 3px;
+}
+.c-span_underline {
+  background: linear-gradient(transparent 50%, rgba(64, 106, 224, 0.3) 50%);
+  margin: 0 3px;
+  padding: 0 2px;
+}
+.c-span_ttl {
+  padding-left: 12px;
+  font-size: 12px;
+  font-style: italic;
+  color: $f-c_lightGray;
+}
+.c-span_must {
+  background-color: red;
+  border-radius: 3px;
+  color: white;
+  font-size: 8px;
+  font-weight: lighter;
+  margin-left: 5px;
+  padding: 2px 3px;
+}

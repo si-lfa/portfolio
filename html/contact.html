@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------------
+    meta_設定
+    -------------------------->
+    <title>
+      shunsuke’s portfolio
+    </title>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.ico" />
+    <meta name="description content="シュンスケのポートフォリオサイトです、フリーランスでWEB制作をしております。" />
+    <html lang="ja" prefix="og: http://ogp.me/ns#">
+    <meta property="og:title" content="shunsuke’s portfolio">
+    <meta property="og:type" content="article"> 
+    <meta property="og:url" content="https://si-lfa.github.io/portfolio/html/contact">
+    <meta property="og:image" content="https://si-lfa.github.io/portfolio/img/portfolio_sns.jpeg">
+    <meta property="og:site_name" content=”shunsuke’s portfolio">
+    <meta property="og:description" content="シュンスケのポートフォリオサイトです、フリーランスでWEB制作をしております。">
+    <meta name="twitter:card" content="summary">
+    <!-------------------------
+      google_font
+    -------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <!-------------------------
+      font-awesome
+    -------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-------------------------
+      css_設定
+    -------------------------->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-------------------------
+      フォーム用スクリプト
+    -------------------------->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  </head>
+  <!-------------------------
+  body
+  -------------------------->
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="container l-header">
+          <div class="l-header_title">
+            <h1 class="c-heading_h1">Portfolio</h1>
+          </div>
+          <div class="l-nav_pc d-none d-lg-block">
+            <nav>
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="works.html">Works</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="l-nav_active">Contact</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/si_lfa" class="l-nav_item" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="l-nav_sp d-lg-none">
+            <input type="checkbox" id="l-nav_sp_checkbox">
+            <label for="l-nav_sp_checkbox" class="l-nav_sp_icon"><span></span></label>
+            <nav id="l-nav_sp_menu">
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="works.html">Works</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="l-nav_active">Contact</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/si_lfa" target="_blank">
+                    <i class="fab fa-twitter"></i><br>Shunsuke's twitter
+                  </a>
+                </li>
+                <li>
+                  <label for="l-nav_sp_checkbox" class="l-nav_sp_icon_close">
+                    <i class="far fa-times-circle u-sp_twitter"></i>
+                  </label>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container-fluid l-main_maining">
+          <img src="../img/portfolio_maining_contact.jpg" alt="maining" class="l-main_maining">
+        </div>
+        <div class="container">
+          <section id="contact" class="l-main_section row">
+            <h2 class="c-heading_h2">Contact</h2>
+            <!-- class, action, methodを変更しないでください -->
+            <div class="col-lg-6 u-height600">
+              <h3 class="c-heading_h3 u-textalign_center">form</h3>
+              <form class="formrun c-form" action="https://form.run/api/v1/r/r875j7pyq8ftnbg5g1fhj1q3" method="post">
+                <!-- ↓自由に要素を追加・編集することができます -->
+                <dl>
+                    <dt>
+                      <label>
+                        名前<span class="c-span_must">必須</span>
+                      </label>
+                    </dt>
+                    <dd>
+                      <input name="名前" type="text" data-formrun-type="name" data-formrun-required>
+                      <div class="c-form_error" data-formrun-show-if-error="名前">"名前"を入力してください</div>
+                    </dd>
+                    <dt>
+                      <label>
+                        メールアドレス<span class="c-span_must">必須</span>
+                      </label>
+                    </dt>
+                    <dd>
+                      <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                      <div class="c-form_error" data-formrun-show-if-error="メールアドレス">"メールアドレス"を入力してください</div>
+                    </dd>
+                    <dt>
+                      <label>
+                        お問い合わせ内容<span class="c-span_must">必須</span>
+                      </label>
+                    </dt>
+                    <dd>
+                      <textarea name="お問い合わせ" data-formrun-required></textarea>
+                      <div class="c-form_error" data-formrun-show-if-error="お問い合わせ">"お問い合わせ内容"を入力してください</div>
+                    </dd>
+                </dl>
+                <!-- ボット投稿をブロックするためのタグ -->
+                <div class="_formrun_gotcha">
+                  <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                  <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                  <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                </div>
+                <div class="c-form_button_box mt-3">
+                  <button class="c-form_button" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">内容を送信する</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="c-heading_h3 u-textalign_center">Twitter</h3>
+              <div class="u-twitter_inner">
+                <a class="twitter-timeline" data-lang="ja" data-height="350" data-theme="light" href="https://twitter.com/si_lfa?ref_src=twsrc%5Etfw">Tweets by si_lfa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main> 
+      <footer>
+        <div class="container-fluid">
+          <small><span class="me-1">&copy;</span>shunsuke</small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

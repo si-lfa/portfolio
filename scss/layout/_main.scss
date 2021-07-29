@@ -1,0 +1,20 @@
+// main.scss
+.l-main_maining{
+  margin-top: 65px;
+}
+.l-main_maining{
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+.l-main_section{
+  margin-top: 72px;
+  padding: 0 3%;
+}
+.l-main_section_box{
+  margin-bottom: 36px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

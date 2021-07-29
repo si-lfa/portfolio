@@ -1,0 +1,48 @@
+// card.scss
+.c-card_service {
+  border: 2px solid $f-c_black;
+  border-radius: 4px;
+  box-shadow: 8px 4px $f-c_baseColor;
+  margin: 0 auto 48px;
+  padding: 24px 16px;
+  transition: 0.3s;
+  width: 90%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    box-shadow: 8px 12px $f-c_baseColor;
+    transform: translateY(-8px);
+  }
+  @include lg {
+    margin: 0 1%;
+    width: 48%;
+  }
+}
+.c-card_skill {
+  border: 2px solid $f-c_black;
+  border-radius: 4px;
+  box-shadow: 8px 4px $f-c_baseColor;
+  margin: 0 auto;
+  padding: 24px 16px;
+  transition: 0.3s;
+  width: 90%;
+  @include lg {
+    width: 98%;
+  }
+  &:hover {
+    box-shadow: 8px 12px $f-c_baseColor;
+    transform: translateY(-8px);
+  }
+}
+.c-card_box {
+  padding: 12px 12px 0;
+}
+.c-card_box_inner {
+  display: inline-block;
+  text-align: center;
+  margin-right: 4px;
+  @include lg {
+    margin-right: 12px;
+  }
+}

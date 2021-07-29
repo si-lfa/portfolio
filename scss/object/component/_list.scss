@@ -1,0 +1,30 @@
+// list.scss
+.c-list {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.c-list_ttl {
+  font-family: $f-var_font_main;
+  @include md {
+    width: 20%;
+  }
+}
+.c-list_data {
+  padding: 0 24px;
+  @include md {
+    padding: 0;
+    width: 80%;
+  }
+}
+.c-list_profile{
+  line-height: 2;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.c-list_dt{
+  font-weight: normal;
+  margin: 16px 0 0;
+}
+.c-list_dd{
+  margin: 0 10px;
+}

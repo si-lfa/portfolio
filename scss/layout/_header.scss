@@ -1,0 +1,13 @@
+// header.scss
+.l-header{
+  background-color: $f-c_white;
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+  z-index: 10;
+}
+.l-header_title{
+  height: 65px;
+  position: relative;
+  width: 30%;
+}
